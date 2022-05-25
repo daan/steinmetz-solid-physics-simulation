@@ -17,7 +17,7 @@ planeId = p.loadURDF("models/plane.urdf")
 
 startPos = [0,0,0.6]
 startOrientation = p.getQuaternionFromEuler([math.radians(90),0,0])
-sphereId = p.loadURDF("models/bicylinder.urdf",startPos, startOrientation)
+sphereId = p.loadURDF("models/tricylinder.urdf",startPos, startOrientation)
 
 #                                  force       position    or LINK_FRAME
 p.applyExternalForce(sphereId, -1, [0, 20, 0], [0,0,0.5], p.WORLD_FRAME)
